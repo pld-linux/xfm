@@ -1,4 +1,0 @@
-xfm name "xfm"
-xfm description "X File Manager"
-xfm exec "xfm &"
-xfm group "Utilities/File Management"
