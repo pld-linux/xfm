@@ -1,15 +1,17 @@
-Summary:	An X Window System based file manager.
+Summary:	An X Window System based file manager
+Summary(pl):	Menad¿er plików pod X Window System
 Name:		xfm
 Version:	1.3.2
 Release:	13
 Copyright:	freeware
 Group:		X11/Applications
+Group(de):	X11/Applikationen
 Group(pl):	X11/Aplikacje
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
-Source1:	xfm.wmconfig
-Patch0:		xfm-1.3.2-nobr.patch
-Patch1:		xfm-1.3.2-flags.patch
-Patch2:		xfm-1.3.2-string.patch
+Source1:	%{name}.wmconfig
+Patch0:		%{name}-1.3.2-nobr.patch
+Patch1:		%{name}-1.3.2-flags.patch
+Patch2:		%{name}-1.3.2-string.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -31,7 +33,7 @@ Install xfm if you would like to use a graphical file manager program.
 %build
 xmkmf
 %{__make} Makefiles
-%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS" \
+%{__make} RPM_OPT_FLAGS="%{rpmcflags}" \
 	XFMLIBDIR=%{_datadir}/%{name}
 
 %install
@@ -43,10 +45,7 @@ install -d $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig/xfm
 
-strip --strip-unneeded $RPM_BUILD_ROOT%{_bindir}/* || :
-
-gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man1/* \
-	MANIFEST COPYING ChangeLog README README-1.2
+gzip -9nf MANIFEST COPYING ChangeLog README README-1.2
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/xfm/dot.xfm
 %{_datadir}/xfm/bitmaps
 %{_datadir}/xfm/pixmaps
-%{_mandir}/man1/xfm.1x.gz
-%{_mandir}/man1/xfmtype.1x.gz
+%{_mandir}/man1/xfm.1x*
+%{_mandir}/man1/xfmtype.1x*
