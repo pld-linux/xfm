@@ -1,7 +1,7 @@
 Summary:	An X Window System based file manager
 Summary(de):	X-File-Manager
 Summary(es):	Administrador de archivos
-Summary(fr):	Gestionnaire de fichiers sous X.
+Summary(fr):	Gestionnaire de fichiers sous X
 Summary(id):	File manager yang berbasiskan X Window System
 Summary(is):	Skráastjóri fyrir X gluggakerfið
 Summary(pl):	Zarz±dca plików pod X Window System
