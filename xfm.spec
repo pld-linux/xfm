@@ -24,6 +24,11 @@ files, and launching programs.
 
 Install xfm if you would like to use a graphical file manager program.
 
+%description -l pl
+xfm to menad¿er plików pod X Window System. Obs³uguje przechodzenie po
+drzewie katalogów, wiele okienek, przenoszenie/kopiowanie/kasowanie
+plików oraz uruchamianie programów.
+
 %prep
 %setup -q
 %patch0 -p1
