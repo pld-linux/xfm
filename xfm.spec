@@ -11,7 +11,7 @@ Summary(tr):	X dosya y鰊eticisi
 Summary(zh_CN):	基于 X Window 系统的文件管理器。
 Name:		xfm
 Version:	1.3.2
-Release:	15
+Release:	16
 License:	Freeware
 Group:		X11/Applications
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
