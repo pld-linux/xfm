@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Xfm
+Type=Application
+Comment=X File Manager
+Comment[pl]=Zarz±dca plików pod X
+Exec=xfm
+Terminal=0
