@@ -32,7 +32,7 @@ around the directory tree, multiple windows, moving/copying/deleting
 files, and launching programs.
 
 %description -l de
-xfm ist ein Datei-Manager für X-Windows, der die Manipulation von
+xfm ist ein Datei-Manager für X-Window, der die Manipulation von
 Dateien und Verzeichnissen auf intuitive, leicht verständliche Weise
 gestattet und außerdem Integration mit anderen Programmen ermöglicht."
 
@@ -40,7 +40,6 @@ gestattet und außerdem Integration mit anderen Programmen ermöglicht."
 xfm es un administrador de archivos para X Window que permite
 manipular archivos y directorios de una manera intuitiva y fácil de
 entender, así como permite su extensión con otros programas.
-
 
 %description -l fr
 xfm est un gestionnaire de fichiers pour X Window vous permettant de
