@@ -5,6 +5,6 @@ Comment=X File Manager
 Comment[pl]=Zarządca plików pod X
 Exec=xfm
 Icon=xfm.png
-Terminal=0
+Terminal=false
 Encoding=UTF-8
 # vi: encoding=utf-8
