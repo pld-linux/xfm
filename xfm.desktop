@@ -2,6 +2,8 @@
 Name=Xfm
 Type=Application
 Comment=X File Manager
-Comment[pl]=Zarz±dca plików pod X
+Comment[pl]=ZarzÄ…dca plikÃ³w pod X
 Exec=xfm
+Icon=xfm.png
 Terminal=0
+# vi: encoding=utf-8
