@@ -11,8 +11,8 @@ Summary(tr):	X dosya y鰊eticisi
 Summary(zh_CN):	基于 X Window 系统的文件管理器。
 Name:		xfm
 Version:	1.3.2
-Release:	16
-License:	Freeware
+Release:	17
+License:	GPL v2+
 Group:		X11/Applications
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
 # Source0-md5:	e954ca08ef323d4fa0ec1ac01482b6f9
@@ -23,8 +23,7 @@ Patch1:		%{name}-1.3.2-flags.patch
 Patch2:		%{name}-1.3.2-string.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define		_prefix		/usr/X11R6
-%define		_mandir		/usr/X11R6/man
+%define		_appdefsdir	/usr/X11R6/lib/X11/app-defaults
 
 %description
 xfm is a file manager for the X Window System. xfm supports moving
@@ -96,12 +95,15 @@ xmkmf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_applnkdir}/Utilities,%{_pixmapsdir}}
+install -d $RPM_BUILD_ROOT{%{_desktopdir},%{_pixmapsdir}}
 
-%{__make} install install.man DESTDIR=$RPM_BUILD_ROOT \
-	XFMLIBDIR=%{_datadir}/%{name}
+%{__make} install install.man \
+	DESTDIR=$RPM_BUILD_ROOT \
+	XFMLIBDIR=%{_datadir}/%{name} \
+	BINDIR=%{_bindir} \
+	MANDIR=%{_mandir}/man1
 
-install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities/xfm.desktop
+install %{SOURCE1} $RPM_BUILD_ROOT%{_desktopdir}/xfm.desktop
 install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xfm.png
 
 %clean
@@ -109,16 +111,16 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc MANIFEST COPYING ChangeLog README README-1.2
-%{_applnkdir}/Utilities/xfm.desktop
-%{_pixmapsdir}/xfm.png
+%doc ChangeLog README README-1.2 TODO
 %attr(755,root,root) %{_bindir}/xfm
 %attr(755,root,root) %{_bindir}/xfmtype
 %attr(755,root,root) %{_bindir}/xfm.install
-%config %{_libdir}/X11/app-defaults/Xfm
+%{_appdefsdir}/Xfm
 %dir %{_datadir}/xfm
 %{_datadir}/xfm/dot.xfm
 %{_datadir}/xfm/bitmaps
 %{_datadir}/xfm/pixmaps
+%{_desktopdir}/xfm.desktop
+%{_pixmapsdir}/xfm.png
 %{_mandir}/man1/xfm.1x*
 %{_mandir}/man1/xfmtype.1x*
