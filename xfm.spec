@@ -15,6 +15,7 @@ Release:	15
 License:	Freeware
 Group:		X11/Applications
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
+# Source0-md5:	e954ca08ef323d4fa0ec1ac01482b6f9
 Source1:	%{name}.desktop
 Source2:	%{name}.png
 Patch0:		%{name}-1.3.2-nobr.patch
