@@ -30,15 +30,15 @@ Install xfm if you would like to use a graphical file manager program.
 
 %build
 xmkmf
-make Makefiles
-make RPM_OPT_FLAGS="$RPM_OPT_FLAGS" \
+%{__make} Makefiles
+%{__make} RPM_OPT_FLAGS="$RPM_OPT_FLAGS" \
 	XFMLIBDIR=%{_datadir}/%{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig
 
-make install install.man DESTDIR=$RPM_BUILD_ROOT \
+%{__make} install install.man DESTDIR=$RPM_BUILD_ROOT \
 	XFMLIBDIR=%{_datadir}/%{name}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_sysconfdir}/X11/wmconfig/xfm
