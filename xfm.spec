@@ -9,7 +9,7 @@ Source1:	xfm.wmconfig
 Patch0:		xfm-1.3.2-nobr.patch
 Patch1:		xfm-1.3.2-flags.patch
 Patch2:		xfm-1.3.2-string.patch
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
 %define		_mandir		/usr/X11R6/man
