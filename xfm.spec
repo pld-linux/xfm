@@ -88,8 +88,11 @@ xfm 是用于 X Window 系统的文件管理器。Xfm 支持目录树间移动、多个窗口、
 %build
 xmkmf
 %{__make} Makefiles
-%{__make} RPM_OPT_FLAGS="%{rpmcflags}" \
-	XFMLIBDIR=%{_datadir}/%{name}
+%{__make} \
+	CC="%{__cc}" \
+	RPM_OPT_FLAGS="%{rpmcflags}" \
+	XFMLIBDIR=%{_datadir}/%{name} \
+	LIBDIR="%{_libdir}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
