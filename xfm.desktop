@@ -7,5 +7,5 @@ Exec=xfm
 Icon=xfm.png
 Terminal=false
 Encoding=UTF-8
-Categories=Utility;
+Categories=Utility;FileManager;
 # vi: encoding=utf-8
