@@ -3,7 +3,7 @@ Summary(pl):	Menad¿er plików pod X Window System
 Name:		xfm
 Version:	1.3.2
 Release:	13
-License:	freeware
+License:	Freeware
 Group:		X11/Applications
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
 Source1:	%{name}.wmconfig
