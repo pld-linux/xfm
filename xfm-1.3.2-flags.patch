@@ -1,0 +1,18 @@
+--- xfm-1.3.2/Imake.options.flags	Thu Jan 14 16:35:11 1999
++++ xfm-1.3.2/Imake.options	Thu Jan 14 16:35:50 1999
+@@ -45,13 +45,13 @@
+ /* Uncomment the following if your system has GCC but it is not used by
+    default */
+ 
+-/* #define USE_GCC */
++#define USE_GCC
+ 
+ #ifdef USE_GCC
+ 
+ CC=gcc
+ CCOPTIONS = -Wall -Wno-parentheses
+-CDEBUGFLAGS = -O
++CDEBUGFLAGS = $(RPM_OPT_FLAGS)
+ 
+ #else
+ 
