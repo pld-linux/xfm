@@ -5,8 +5,6 @@ Version:	1.3.2
 Release:	13
 License:	freeware
 Group:		X11/Applications
-Group(de):	X11/Applikationen
-Group(pl):	X11/Aplikacje
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
 Source1:	%{name}.wmconfig
 Patch0:		%{name}-1.3.2-nobr.patch
