@@ -1,16 +1,17 @@
 Summary:	An X Window System based file manager
 Summary(id):	File manager yang berbasiskan X Window System
 Summary(is):	Skráastjóri fyrir X gluggakerfið
-Summary(pl):	Mened¿er plików pod X Window System
+Summary(pl):	Zarz±dca plików pod X Window System
 Summary(sk):	Správca súborov pre systém X Window
 Summary(zh_CN):	»ùÓÚ X Window ÏµÍ³µÄÎÄ¼þ¹ÜÀíÆ÷¡£
 Name:		xfm
 Version:	1.3.2
-Release:	14
+Release:	15
 License:	Freeware
 Group:		X11/Applications
 Source0:	ftp://ftp.x.org/contrib/applications/%{name}-%{version}.tar.gz
 Source1:	%{name}.desktop
+Source2:	%{name}.png
 Patch0:		%{name}-1.3.2-nobr.patch
 Patch1:		%{name}-1.3.2-flags.patch
 Patch2:		%{name}-1.3.2-string.patch
@@ -35,9 +36,9 @@ skráarkefið, opna marga glugga samtímis, flytja/afrita/þurrka út skrár
 og ræsa forrit.
 
 %description -l pl
-xfm to mened¿er plików pod X Window System. Obs³uguje chodzenie po
-drzewie katalogów, wiele okienek, przenoszenie/kopiowanie/kasowanie
-plików oraz uruchamianie programów.
+xfm to program do zarz±dzania plikami pod X Window System. Obs³uguje
+chodzenie po drzewie katalogów, wiele okienek, przenoszenie/
+/kopiowanie/kasowanie plików oraz uruchamianie programów.
 
 %description -l sk
 xfm je správca súborov pre systém X Window. xfm podporuje pohybovanie sa
@@ -62,22 +63,22 @@ xmkmf
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_applnkdir}/Utilities
+install -d $RPM_BUILD_ROOT{%{_applnkdir}/Utilities,%{_pixmapsdir}}
 
 %{__make} install install.man DESTDIR=$RPM_BUILD_ROOT \
 	XFMLIBDIR=%{_datadir}/%{name}
 
 install %{SOURCE1} $RPM_BUILD_ROOT%{_applnkdir}/Utilities/xfm.desktop
-
-gzip -9nf MANIFEST COPYING ChangeLog README README-1.2
+install %{SOURCE2} $RPM_BUILD_ROOT%{_pixmapsdir}/xfm.png
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {MANIFEST,COPYING,ChangeLog,README,README-1.2}.gz
-%config %{_applnkdir}/Utilities/xfm.desktop
+%doc MANIFEST COPYING ChangeLog README README-1.2
+%{_applnkdir}/Utilities/xfm.desktop
+%{_pixmapsdir}/xfm.png
 %attr(755,root,root) %{_bindir}/xfm
 %attr(755,root,root) %{_bindir}/xfmtype
 %attr(755,root,root) %{_bindir}/xfm.install
