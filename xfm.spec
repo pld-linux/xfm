@@ -1,14 +1,14 @@
 Summary:	An X Window System based file manager
-Summary(de):	X-File-Manager
-Summary(es):	Administrador de archivos
-Summary(fr):	Gestionnaire de fichiers sous X
-Summary(id):	File manager yang berbasiskan X Window System
-Summary(is):	Skráastjóri fyrir X gluggakerfiğ
-Summary(pl):	Zarz±dca plików pod X Window System
-Summary(pt_BR):	Gerenciador de arquivos
-Summary(sk):	Správca súborov pre systém X Window
-Summary(tr):	X dosya yöneticisi
-Summary(zh_CN):	»ùÓÚ X Window ÏµÍ³µÄÎÄ¼ş¹ÜÀíÆ÷¡£
+Summary(de.UTF-8):   X-File-Manager
+Summary(es.UTF-8):   Administrador de archivos
+Summary(fr.UTF-8):   Gestionnaire de fichiers sous X
+Summary(id.UTF-8):   File manager yang berbasiskan X Window System
+Summary(is.UTF-8):   SkrÃ¡astjÃ³ri fyrir X gluggakerfiÃ°
+Summary(pl.UTF-8):   ZarzÄ…dca plikÃ³w pod X Window System
+Summary(pt_BR.UTF-8):   Gerenciador de arquivos
+Summary(sk.UTF-8):   SprÃ¡vca sÃºborov pre systÃ©m X Window
+Summary(tr.UTF-8):   X dosya yÃ¶neticisi
+Summary(zh_CN.UTF-8):   åŸºäº X Window ç³»ç»Ÿçš„æ–‡ä»¶ç®¡ç†å™¨ã€‚
 Name:		xfm
 Version:	1.3.2
 Release:	18
@@ -30,53 +30,53 @@ xfm is a file manager for the X Window System. xfm supports moving
 around the directory tree, multiple windows, moving/copying/deleting
 files, and launching programs.
 
-%description -l de
-xfm ist ein Datei-Manager für X-Window, der die Manipulation von
-Dateien und Verzeichnissen auf intuitive, leicht verständliche Weise
-gestattet und außerdem Integration mit anderen Programmen ermöglicht."
+%description -l de.UTF-8
+xfm ist ein Datei-Manager fÃ¼r X-Window, der die Manipulation von
+Dateien und Verzeichnissen auf intuitive, leicht verstÃ¤ndliche Weise
+gestattet und auÃŸerdem Integration mit anderen Programmen ermÃ¶glicht."
 
-%description -l es
+%description -l es.UTF-8
 xfm es un administrador de archivos para X Window que permite
-manipular archivos y directorios de una manera intuitiva y fácil de
-entender, así como permite su extensión con otros programas.
+manipular archivos y directorios de una manera intuitiva y fÃ¡cil de
+entender, asÃ­ como permite su extensiÃ³n con otros programas.
 
-%description -l fr
+%description -l fr.UTF-8
 xfm est un gestionnaire de fichiers pour X Window vous permettant de
-manipuler des fichiers et des répertoires de façon intuitive et facile
-à comprendre, vous pouvez aussi l'étendre avec d'autres programmes.
+manipuler des fichiers et des rÃ©pertoires de faÃ§on intuitive et facile
+Ã  comprendre, vous pouvez aussi l'Ã©tendre avec d'autres programmes.
 
-%description -l id
+%description -l id.UTF-8
 xfm adalah file manager untuk X Window System. xfm bisa digunakan
 untuk berpindah-pindah direktori, mendukung beberapa window,
 memindahkan/ mengcopy/menghapus file, dan menjalankan program.
 
-%description -l is
-xfm er skráastjóri fyrir X gluggakerfiğ. Meğ xfm er hægt ağ flakka um
-skráarkefiğ, opna marga glugga samtímis, flytja/afrita/şurrka út skrár
-og ræsa forrit.
+%description -l is.UTF-8
+xfm er skrÃ¡astjÃ³ri fyrir X gluggakerfiÃ°. MeÃ° xfm er hÃ¦gt aÃ° flakka um
+skrÃ¡arkefiÃ°, opna marga glugga samtÃ­mis, flytja/afrita/Ã¾urrka Ãºt skrÃ¡r
+og rÃ¦sa forrit.
 
-%description -l pl
-xfm to program do zarz±dzania plikami pod X Window System. Obs³uguje
-chodzenie po drzewie katalogów, wiele okienek, przenoszenie/
-/kopiowanie/kasowanie plików oraz uruchamianie programów.
+%description -l pl.UTF-8
+xfm to program do zarzÄ…dzania plikami pod X Window System. ObsÅ‚uguje
+chodzenie po drzewie katalogÃ³w, wiele okienek, przenoszenie/
+/kopiowanie/kasowanie plikÃ³w oraz uruchamianie programÃ³w.
 
-%description -l pt_BR
-O xfm é um gerenciador de arquivos para X Window que permite manipular
-arquivos e diretórios de uma maneira intuitiva e fácil de entender,
-assim como permite sua extensão com outros programas.
+%description -l pt_BR.UTF-8
+O xfm Ã© um gerenciador de arquivos para X Window que permite manipular
+arquivos e diretÃ³rios de uma maneira intuitiva e fÃ¡cil de entender,
+assim como permite sua extensÃ£o com outros programas.
 
-%description -l sk
-xfm je správca súborov pre systém X Window. xfm podporuje pohybovanie
-sa po adresárovej ¹truktúre, viacero okien,
-presúvanie/kopírovanie/mazanie súborov a spú¹tanie programov.
+%description -l sk.UTF-8
+xfm je sprÃ¡vca sÃºborov pre systÃ©m X Window. xfm podporuje pohybovanie
+sa po adresÃ¡rovej Å¡truktÃºre, viacero okien,
+presÃºvanie/kopÃ­rovanie/mazanie sÃºborov a spÃºÅ¡tanie programov.
 
-%description -l tr
-xfm yardımıyla dosyaları ve dizinleri kolayca anlaşılabilir bir
-arabirim yardımıyla kontrol edebilirsiniz.
+%description -l tr.UTF-8
+xfm yardÄ±mÄ±yla dosyalarÄ± ve dizinleri kolayca anlaÅŸÄ±labilir bir
+arabirim yardÄ±mÄ±yla kontrol edebilirsiniz.
 
-%description -l zh_CN
-#~ "ÒÆ¶¯/¸´ÖÆ/É¾³ıÎÄ¼şºÍÆô¶¯³ÌĞò¡£
-xfm ÊÇÓÃÓÚ X Window ÏµÍ³µÄÎÄ¼ş¹ÜÀíÆ÷¡£Xfm Ö§³ÖÄ¿Â¼Ê÷¼äÒÆ¶¯¡¢¶à¸ö´°¿Ú¡¢
+%description -l zh_CN.UTF-8
+#~ "ç§»åŠ¨/å¤åˆ¶/åˆ é™¤æ–‡ä»¶å’Œå¯åŠ¨ç¨‹åºã€‚
+xfm æ˜¯ç”¨äº X Window ç³»ç»Ÿçš„æ–‡ä»¶ç®¡ç†å™¨ã€‚Xfm æ”¯æŒç›®å½•æ ‘é—´ç§»åŠ¨ã€å¤šä¸ªçª—å£ã€
 
 %prep
 %setup -q
