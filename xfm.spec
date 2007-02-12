@@ -1,14 +1,14 @@
 Summary:	An X Window System based file manager
-Summary(de.UTF-8):   X-File-Manager
-Summary(es.UTF-8):   Administrador de archivos
-Summary(fr.UTF-8):   Gestionnaire de fichiers sous X
-Summary(id.UTF-8):   File manager yang berbasiskan X Window System
-Summary(is.UTF-8):   Skráastjóri fyrir X gluggakerfið
-Summary(pl.UTF-8):   Zarządca plików pod X Window System
-Summary(pt_BR.UTF-8):   Gerenciador de arquivos
-Summary(sk.UTF-8):   Správca súborov pre systém X Window
-Summary(tr.UTF-8):   X dosya yöneticisi
-Summary(zh_CN.UTF-8):   基于 X Window 系统的文件管理器。
+Summary(de.UTF-8):	X-File-Manager
+Summary(es.UTF-8):	Administrador de archivos
+Summary(fr.UTF-8):	Gestionnaire de fichiers sous X
+Summary(id.UTF-8):	File manager yang berbasiskan X Window System
+Summary(is.UTF-8):	Skráastjóri fyrir X gluggakerfið
+Summary(pl.UTF-8):	Zarządca plików pod X Window System
+Summary(pt_BR.UTF-8):	Gerenciador de arquivos
+Summary(sk.UTF-8):	Správca súborov pre systém X Window
+Summary(tr.UTF-8):	X dosya yöneticisi
+Summary(zh_CN.UTF-8):	基于 X Window 系统的文件管理器。
 Name:		xfm
 Version:	1.3.2
 Release:	18
